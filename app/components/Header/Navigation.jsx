@@ -18,10 +18,13 @@ export function Navigation({ headline1, headline2, headline3 }) {
 
   return (
     <nav>
-      <ul className="flex items-center gap-x-10 ">
+      <ul className="flex items-center gap-x-10 mt-1">
         {navigation.map((nav, index) => {
           return (
-            <li key={index} className="items-center">
+            <li
+              key={index}
+              className="items-center  hover:text-violet-900 duration-200"
+            >
               <Link href={nav.url}>{nav.title}</Link>
             </li>
           );
